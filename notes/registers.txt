@@ -1,0 +1,11 @@
+CONTEXT | ADDRESS | NOTES
+ REG A  |   000   | accumulator a, where all arithmetic operations are taken from.
+ REG x  |   001   | registers x, y and z,
+ REG y  |   010   |   each is an 8 bit register.
+ REG z  |   011   | 
+ REG IL |   100   | 16 bit program counter.
+ REG IH |   101   |   because it is a 16 bit, it is divided into 8 bits registers.
+ REG S  |   110   | stack counter.
+ FLAGS  |   111   | 8 bit flags registers.
+        |         |   built from |0|0|0|0|zero|overflow|carry|neg|
+

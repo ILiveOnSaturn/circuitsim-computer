@@ -1,0 +1,4 @@
+NAME  | START  - STOP   | SIZE
+EPROM | 0x0000 - 0x7FFF | 32Kb
+RAM   | 0x8000 - 0xBFFF | 16Kb
+REGS  | 0xC000 - 0xC007 | 8 b

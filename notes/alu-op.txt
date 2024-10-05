@@ -1,0 +1,10 @@
+ACTION | OPCODE
+---------------
+  ADD  | 000
+  SUB  | 001
+  NOT  | 010
+  AND  | 011
+  OR   | 100
+  XOR  | 101
+  SFTR | 110
+  SFTL | 111
