@@ -1,4 +1,8 @@
 NAME  | START  - STOP   | SIZE
-EPROM | 0x0000 - 0x7FFF | 32Kb
-RAM   | 0x8000 - 0xBFFF | 16Kb
-REGS  | 0xC000 - 0xC007 | 8 b
+START | 0x0000 - 0x0001 | 16 bit  ; address of program start
+INTRQ | 0x0002 - 0x0003 | 16 bit  ; address of interrupt (not yet sure to implement)
+EPROM | 0x0004 - 0x3FFF | 16KB - 4 Bytes
+NVRAM | 0x4000 - 0x7FFF | 16KB
+VRAM  | 0x8000 - 0xBFFF | 16KB
+OUT   | 0xC000 - 0xFFF7 | 16K - 8 Bytes
+REGS  | 0xFFF8 - 0xFFFF | 8 Bytes
