@@ -8,10 +8,12 @@
 		- load - using flipflops as "locks"
 		- enable - to output to the bus
 		- clock - to act only on clock signal
-	- [ ] check registers are working with on clock up
+	- [ ] make flipflop default value 0 instead of E
 	- [x] d-flipflop
 		- has enable and value.
 		- build from nand (for transistors)
+- [ ] add bus
+    - [ ] a registers connect to A in alu
 
 # Circuitjs
 - [ ] implement alu in transistors logic
