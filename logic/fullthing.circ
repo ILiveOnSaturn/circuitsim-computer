@@ -56,12 +56,62 @@
     <a name="circuit" val="main"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="0.25"/>
-    <comp lib="0" loc="(550,100)" name="Probe">
+    <comp lib="0" loc="(230,110)" name="Clock"/>
+    <comp lib="0" loc="(440,320)" name="Bit Extender">
+      <a name="in_width" val="1"/>
+      <a name="out_width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(520,430)" name="Constant">
+      <a name="value" val="0x0"/>
+    </comp>
+    <comp lib="0" loc="(540,450)" name="Splitter">
+      <a name="appear" val="right"/>
+      <a name="facing" val="west"/>
+      <a name="fanout" val="8"/>
+      <a name="incoming" val="8"/>
+    </comp>
+    <comp lib="0" loc="(610,100)" name="Probe">
       <a name="appearance" val="NewPins"/>
       <a name="facing" val="south"/>
     </comp>
-    <comp loc="(420,320)" name="ALU"/>
-    <wire from="(550,100)" to="(550,650)"/>
+    <comp lib="1" loc="(530,310)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="1" loc="(580,460)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp loc="(470,230)" name="bus_register">
+      <a name="label" val="A_reg"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp loc="(510,350)" name="ALU">
+      <a name="label" val="ALU1"/>
+    </comp>
+    <wire from="(230,110)" to="(260,110)"/>
+    <wire from="(260,110)" to="(260,240)"/>
+    <wire from="(260,240)" to="(260,320)"/>
+    <wire from="(260,240)" to="(440,240)"/>
+    <wire from="(440,320)" to="(500,320)"/>
+    <wire from="(460,170)" to="(460,210)"/>
+    <wire from="(460,170)" to="(610,170)"/>
+    <wire from="(460,260)" to="(460,300)"/>
+    <wire from="(460,300)" to="(460,360)"/>
+    <wire from="(460,300)" to="(500,300)"/>
+    <wire from="(460,360)" to="(480,360)"/>
+    <wire from="(510,350)" to="(610,350)"/>
+    <wire from="(510,370)" to="(520,370)"/>
+    <wire from="(510,380)" to="(520,380)"/>
+    <wire from="(510,390)" to="(520,390)"/>
+    <wire from="(510,400)" to="(520,400)"/>
+    <wire from="(520,410)" to="(520,420)"/>
+    <wire from="(520,420)" to="(520,430)"/>
+    <wire from="(520,430)" to="(520,440)"/>
+    <wire from="(540,450)" to="(550,450)"/>
+    <wire from="(610,100)" to="(610,170)"/>
+    <wire from="(610,170)" to="(610,350)"/>
+    <wire from="(610,350)" to="(610,650)"/>
   </circuit>
   <circuit name="ALU">
     <a name="appearance" val="custom"/>
