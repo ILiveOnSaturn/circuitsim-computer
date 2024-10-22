@@ -1,15 +1,1 @@
 COMMAND | 16 bit argument |  OPCODE  | NOTES
--NOP    |                 | TODO     | no-operation, makes the REG-I to increment without any operation.
--ALU OP | memory location | 00000xxx | uses an ALU operation with register A and the value in memory location.
---ADD   | memory location | 00000000 | 
---SUB   | memory location | 00000001 | 
---NOT   | memory location | 00000010 | 
---AND   | memory location | 00000011 | 
---OR    | memory location | 00000100 | 
---XOR   | memory location | 00000101 | 
---LSR   |                 | 00000110 | logical shift right register A. uses raw default alu shift.
---LSL   |                 | 00000111 | logical shift left register A. uses raw default alu shift.
--ASR    |                 | 00001110 | arthimetic shift right register A. uses default alu shift but adds to it.
--ASL    |                 | 00001111 | arthimetic shift left register A. uses default alu shift but adds to it.
--ROR    |                 | 00010110 | rotate right register A. uses default alu shift but adds to it.
--ROL    |                 | 00010111 | rotate left register A. uses default alu shift but adds to it.

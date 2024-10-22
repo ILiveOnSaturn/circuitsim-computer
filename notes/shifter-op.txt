@@ -1,0 +1,9 @@
+ACTION | OPCODE
+  PAS  |  000
+  MIR  |  001
+  ASL  |  010
+  ASR  |  011
+  RTL  |  100
+  RTR  |  101
+  LSL  |  110
+  LSR  |  111
