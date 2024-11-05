@@ -1,1 +1,17 @@
-COMMAND | 16 bit argument |  OPCODE  | NOTES
+COMMAND |  OPCODE   | ARGS
+  PAS   | 0000-0000 | 
+  MIR   | 0000-0001 |
+  ASL   | 0000-0010 |
+  ASR   | 0000-0011 |
+  RTL   | 0000-0100 |
+  RTR   | 0000-0101 |
+  LSL   | 0000-0110 |
+  LSR   | 0000-0111 |
+  ADD   | 0000-1000 |
+  SUB   | 0000-1001 |
+  INC   | 0000-1010 |
+  DEC   | 0000-1011 |
+  NOT   | 0000-1100 |
+  AND   | 0000-1101 |
+  OR    | 0000-1110 |
+  XOR   | 0000-1111 |

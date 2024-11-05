@@ -1,6 +1,0 @@
-       NAME         | OPCODE EXAMPLE | NOTES
- operations format  |   [00000000]   | - operation
-                    |   [00000000]   |   address A
-                    |   [00000000]   |   address B
-                    |                |   - the operations are 8 bit and if they require any other arguments then it is in another 8 bit number in the next 8 bit. each operation has a number of versions and each one is for different kind of adress.
-register addressing |  [00000][000]  | - the first 3 bits are the register address and the next 5 bits are a signed number to add to the address in the register.
